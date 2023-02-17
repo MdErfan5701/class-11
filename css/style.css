@@ -1,0 +1,313 @@
+/* common css start */
+
+:root{
+
+    --sanserif: 'Open Sans', sans-serif;
+    --abril: 'Abril Fatface', cursive;
+    --ubunto: 'Ubuntu', sans-serif;
+
+    --primery-color: #0f2f44;
+    --secondery-color: #ffc712;
+    --third-color: #8484bf;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+a,button{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+ol,ul{
+
+    list-style: none;
+
+}
+
+.container{
+
+    width: 1170px;
+    margin: auto;
+
+}
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.button{
+
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--ubunto);
+
+}
+
+.section-info h4{
+
+    font-family: var(--ubunto);
+    text-transform: capitalize;
+
+}
+.section-info h1{
+
+    text-transform: capitalize;
+
+}
+
+/* common css end */
+
+/* header section start */
+
+header{
+
+    background-color: var(--primery-color);
+    color: #fff;
+    padding: 18px;
+
+}
+
+header .row{
+    justify-content: space-between;
+}
+
+header .container p{
+    font-family: var(--ubunto);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* header section end */
+
+/* navigation section start */
+
+#navigation .container .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation .container .row .logo{
+    width: 30%;
+}
+
+#navigation .container .row .menu{
+    width: 70%;
+    text-align: right;
+}
+#navigation .container .menu li{
+    display: inline-block;
+}
+
+#navigation .container .menu li> span i{
+
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+#navigation .menu ul li a{
+    display: inline-block;
+    font-family: var(--ubunto);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 41px 10px;
+    color: var(--primery-color);
+    transition: .5s;
+}
+#navigation .menu ul li:hover a{
+    background-color: #fff9e6;
+    color: var(--secondery-color);
+}
+/* navigation section end */
+
+/* banner section start */
+
+#banner{
+    background-color: #e0eeff;
+    background-image: url(../images/Bizzency-banner.png);
+    background-position-y: 100%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
+#banner .container .row{
+    align-items: center;
+}
+
+#banner .container .banner-left-area{
+    width: 40%;
+    padding: 130px 0;
+}
+
+#banner .container .banner-left-area .section-info h4{
+
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+#banner .container .banner-left-area .section-info h1{
+
+    font-size: 80px;
+    text-transform: uppercase;
+
+}
+
+#banner .container .banner-left-area h5{
+
+    font-family: var(--ubunto);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 13px;
+
+}
+
+#banner .container .banner-left-area p{
+
+    width: 460px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 25px 0 30px;
+
+}
+
+#banner .container .banner-left-area .button{
+
+    background-color: #8484bf;
+    color: #fff;
+    transition: .3s;
+}
+
+#banner .container .banner-left-area span i{
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: #8484bf;
+    font-size: 20px;
+    background-color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#banner .container .banner-left-area .button:hover{
+    background-color: var(--primery-color);
+}
+
+/* banner section end */
+
+/* about section start */
+
+#about{
+    padding: 100px 0;
+}
+
+#about .row{
+    align-items: center;
+}
+
+#about .row .about-left-area{
+
+    width: 50%;
+}
+
+#about .row .about-left-area .section-info h4{
+
+    font-size: 14px;
+    width: 300;
+}
+
+#about .row .about-left-area .section-info h1{
+
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about .row .about-left-area p{
+    
+    line-height: 24px;
+}
+
+#about .row .about-left-area .button a{
+
+    background-color: var(--secondery-color);
+    color: #0f2f44;
+    transition: .3s;
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+
+#about .row .about-left-area .button a:hover{
+
+    background-color: #fff;
+    border: 1px solid #ddd;    
+}
+
+#about .row .about-left-area .button02 a{
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+}
+
+#about .row .about-left-area .button02 a:hover{
+
+    background-color: var(--secondery-color);
+    border: none;
+}
+
+#about .row .about-left-area ol,li{
+
+    padding:30px 0 0 30px;
+}
+
+#about .row .about-right-area{
+    width: 50%;
+}
+/* about section end */
